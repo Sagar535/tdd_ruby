@@ -21,4 +21,12 @@ class SagarPalindromeTest < Minitest::Test
   def test_letters
   	assert_equal "madamimadam", "madam, i'm adam.".letters
   end
+
+  def test_integer_non_palindrome
+  	refute 12345.palindrome?
+  end
+
+  def test_integer_palindrome
+  	assert 12321.palindrome?
+  end
 end
